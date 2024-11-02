@@ -1,101 +1,408 @@
 import Image from "next/image";
-
-export default function Home() {
+import Mobiles from "../app/public/mbl.png";
+import Watch from "../app/public/watch.png";
+import Headphone from "../app/public/headphone.png";
+import Gamming from "../app/public/gaming.png";
+import Computer from "../app/public/computer.png";
+import Camera from "../app/public/camera.png";
+import Screen from "../app/public/Screenshot 2024-10-24 183820.png";
+import Iphone from "../app/public/Iphone Image.png";
+import Iphonefourteen from "../app/public/Iphone 14 pro 1.png";
+import Photography from "../app/public/photography.png";
+import Applewatch from "../app/public/Iphone 14 pro 1 (1).png";
+import Headphonepro from "../app/public/headphonepro.png";
+import Normalwatch from "../app/public/Iphone 14 pro 1 (3).png"
+import Singlemobile from "../app/public/singlemobile.png"
+import Earpods from "../app/public/earbugs.png"
+import Tablet from "../app/public/Iphone 14 pro 1 (4).png"
+import Mackbook from "../app/public/Macbook 1.png"
+import Smartwatch from "../app/public/Group 1.png"
+import Secondmobile from "../app/public/image 41.png"
+import Ipad from "../app/public/image 64.png"
+import Bannertwo from "./public/Banner 2.png"
+export default function Main() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+      {/* Info Section */}
+      <div className="info">
+        <div className="info-text">
+          <h3 className="title">Pro.Beyond.</h3>
+          <h6 className="iphone">
+            I Phone 14 <span>Pro</span>
+          </h6>
+          <h4 className="change">
+            Created to change everything for the better. For everyone.
+          </h4>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          {/* Shop Now Button */}
+          <div className="total">
+            <div className="shop-now"></div>
+            <button>Shop Now</button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Image
+          src={Iphone}
+          alt="Iphone"
+          width={300}
+          height={200}
+          quality={100}
+        />
+      </div>
+
+      {/* Banner Section */}
+      <div>
+        <Image
+          className="bannerone"
+          src={Screen}
+          alt="Iphone"
+          width={1400}
+          height={1000}
+          quality={100}
+        />
+      </div>
+
+      {/* Category Section */}
+      <section className="category-section">
+        <div className="category-header">
+          <h2>Browse By Category</h2>
+          <div className="category-nav">
+            <span className="arrow left">&lt;</span>
+            <span className="arrow right">&gt;</span>
+          </div>
+        </div>
+        <div className="categories">
+          <div className="category-item">
+            <Image
+              src={Mobiles}
+              alt="Phones"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <p>Phones</p>
+          </div>
+          <div className="category-item">
+            <Image
+              src={Watch}
+              alt="Smart Watches"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <p>Smart Watches</p>
+          </div>
+          <div className="category-item">
+            <Image
+              src={Camera}
+              alt="Cameras"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <p>Cameras</p>
+          </div>
+          <div className="category-item">
+            <Image
+              src={Headphone}
+              alt="Headphones"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <p>Headphones</p>
+          </div>
+          <div className="category-item">
+            <Image
+              src={Computer}
+              alt="Computers"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <p>Computers</p>
+          </div>
+          <div className="category-item">
+            <Image
+              src={Gamming}
+              alt="Gaming"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <p>Gaming</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Section */}
+      <div className="container">
+        <div className="tabs">
+          <h4 className="tab">New Arrival</h4>
+          <h4 className="tab">Bestseller</h4>
+          <h4 className="tab">Featured Products</h4>
+        </div>
+
+        <div className="product-grid">
+          {/* Product 1 */}
+          <div className="product-card">
+            <div className="heart-icon">♡</div>
+            <Image
+              src={Iphonefourteen}
+              alt="iPhone"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <h3>Apple iPhone 14 Pro Max 128GB Deep Purple</h3>
+            <p className="price">$900</p>
+            <button className="buy-now">Buy Now</button>
+          </div>
+
+          {/* Product 2 */}
+          <div className="product-card">
+            <div className="heart-icon">♡</div>
+            <Image
+              src={Photography}
+              alt="Blackmagic Pocket Cinema Camera"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <h3>Blackmagic Pocket Cinema Camera 6k</h3>
+            <p className="price">$2535</p>
+            <button className="buy-now">Buy Now</button>
+          </div>
+
+          {/* Product 3 */}
+          <div className="product-card">
+            <div className="heart-icon">♡</div>
+            <Image
+              src={Applewatch}
+              alt="Apple Watch"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <h3>Apple Watch Series 9 GPS 41mm Starlight Aluminium</h3>
+            <p className="price">$399</p>
+            <button className="buy-now">Buy Now</button>
+          </div>
+
+          {/* Product 4 */}
+          <div className="product-card">
+            <div className="heart-icon">♡</div>
+            <Image
+              src={Headphonepro}
+              alt="Apple Watch"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <h3>Apple Watch Series 9 GPS 41mm Starlight Aluminium</h3>
+            <p className="price">$399</p>
+            <button className="buy-now">Buy Now</button>
+          </div>
+
+          {/* Product 5*/}
+          <div className="product-card">
+            <div className="heart-icon">♡</div>
+            <Image
+              src={Normalwatch}
+              alt="Apple Watch"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <h3>Apple Watch Series 9 GPS 41mm Starlight Aluminium</h3>
+            <p className="price">$399</p>
+            <button className="buy-now">Buy Now</button>
+          </div>
+
+          {/* Product 6*/}
+          <div className="product-card">
+            <div className="heart-icon">♡</div>
+            <Image
+              src={Singlemobile}
+              alt="Apple Watch"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <h3>Apple Watch Series 9 GPS 41mm Starlight Aluminium</h3>
+            <p className="price">$399</p>
+            <button className="buy-now">Buy Now</button>
+          </div>
+
+          {/* Product 7 */}
+          <div className="product-card">
+            <div className="heart-icon">♡</div>
+            <Image
+              src={Earpods}
+              alt="Apple Watch"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <h3>Apple Watch Series 9 GPS 41mm Starlight Aluminium</h3>
+            <p className="price">$399</p>
+            <button className="buy-now">Buy Now</button>
+          </div>
+          {/* Product 8 */}
+          <div className="product-card">
+            <div className="heart-icon">♡</div>
+            <Image
+              src={Tablet}
+              alt="AirPods Max"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <h3>AirPods Max Silver Starlight Aluminium</h3>
+            <p className="price">$549</p>
+            <button className="buy-now">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      {/* part 3 - Updated class names */}
+      <div className="unique-product-wrapper">
+        <div className="unique-product-card">
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src={Smartwatch}
+            alt="Earpods"
+            width={300}
+            height={200}
+            quality={100}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          <h3>Popular Products</h3>
+          <p className="unique-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis massa nec eros tempus commodo.</p>
+          <button className="unique-shop-now">Shop Now</button>
+        </div>
+
+        <div className="unique-product-card">
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+            src={Ipad}
+            alt="Earpods"
+            width={300}
+            height={200}
+            quality={100}
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+          <h3>Ipad Pro</h3>
+          <p className="unique-description">Sed sit amet sapien vel nisi sodales malesuada. Nulla facilisi. Suspendisse nec orci quam.</p>
+          <button className="unique-shop-now">Shop Now</button>
+        </div>
+
+        <div className="unique-product-card">
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+            src={Secondmobile}
+            alt="Earpods"
+            width={300}
+            height={200}
+            quality={100}
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <h3>Samsung Galaxy</h3>
+          <p className="unique-description">Curabitur lobortis, libero non tempus tincidunt, lectus velit malesuada ex, vel fermentum leo metus sit.</p>
+          <button className="unique-shop-now">Shop Now</button>
+        </div>
+
+        <div className="unique-product-card">
+          <Image
+            src={Mackbook}
+            alt="Earpods"
+            width={300}
+            height={200}
+            quality={100}
+          />
+          <h3>Macbook Pro</h3>
+          <p className="unique-description">Vivamus efficitur, lectus in mollis fermentum, lacus velit cursus lacus, a suscipit sapien velit eget elit.</p>
+          <button className="unique-shop-now">Shop Now</button>
+        </div>
+      </div>
+      <br />
+
+      {/* discount Section */}
+      <div className="container">
+        <div className="tabs">
+          <h4 className="tab">Discounts Up to -50%</h4>
+
+        </div>
+        <br />
+        <div className="product-grid">
+          {/* Product 1 */}
+          <div className="product-card">
+            <div className="heart-icon">♡</div>
+            <Image
+              src={Iphonefourteen}
+              alt="iPhone"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <h3>Apple iPhone 14 Pro Max 128GB Deep Purple</h3>
+            <p className="price">$900</p>
+            <button className="buy-now">Buy Now</button>
+          </div>
+
+          {/* Product 2 */}
+          <div className="product-card">
+            <div className="heart-icon">♡</div>
+            <Image
+              src={Photography}
+              alt="Blackmagic Pocket Cinema Camera"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <h3>Blackmagic Pocket Cinema Camera 6k</h3>
+            <p className="price">$2535</p>
+            <button className="buy-now">Buy Now</button>
+          </div>
+
+          {/* Product 3 */}
+          <div className="product-card">
+            <div className="heart-icon">♡</div>
+            <Image
+              src={Applewatch}
+              alt="Apple Watch"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <h3>Apple Watch Series 9 GPS 41mm Starlight Aluminium</h3>
+            <p className="price">$399</p>
+            <button className="buy-now">Buy Now</button>
+          </div>
+
+          {/* Product 4 */}
+          <div className="product-card">
+            <div className="heart-icon">♡</div>
+            <Image
+              src={Headphonepro}
+              alt="Apple Watch"
+              width={300}
+              height={200}
+              quality={100}
+            />
+            <h3>Apple Watch Series 9 GPS 41mm Starlight Aluminium</h3>
+            <p className="price">$399</p>
+            <button className="buy-now">Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      {/* Banner Section two */}
+      <div>
+        <Image
+          className="bannerone"
+          src={Bannertwo}
+          alt="Iphone"
+          width={1400}
+          height={1000}
+          quality={100}
+        />
+      </div>
     </div>
   );
 }
